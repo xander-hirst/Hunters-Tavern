@@ -6,14 +6,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-a {font-weight: bold; color: rgb(255, 59, 59);}
-a:visited { color:rgb(255, 59, 59); }
-a:hover { color:rgb(255, 59, 59); }
-a:focus { color:rgb(255, 133, 133); }
-a:hover, a:active { color:rgb(255, 133, 133); }
+ul {
+  list-style-type: none;
+  color: black;
+  font-weight: bold;
+}
+li {
+    background-color: rgb(243, 202, 147);
+    margin-bottom: 2rem;
+}
+.back {
+    font-weight: bold; 
+    color: rgb(255, 59, 59);
+    background-color: black;
+    margin:25px; 
+    font-size: 2rem;
+}
+.back:visited { color:rgb(255, 59, 59); }
+.back:hover, .back:active, .back:focus { color:rgb(255, 133, 133); }
+
+
+.links, .links:visited {
+    color: black;
+    background-color: rgb(243, 202, 147);
+}
+.links:hover, .links:active, .links:focus { color:rgb(255, 59, 59); }
 
 .center {
-    height: 95vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,9 +53,26 @@ body {
 <body>
 
 <div class="container">
-    <a href="./bounty-landing.html" style="margin:50px 25px;">Go Back</a>
+    <a class="back" href="./bounty-landing.html">Go Back</a>
     <div class="center">
-        <h1>Elimination</h1>
+        <ul>
+            <li><a class="links" href="./eliminations/abominable-horror.html">The Abominable Horror</a>
+                <ul>
+                    <li>Haskus, $4000</li>
+                </ul>
+            </li>
+            <li> </li>
+            <li><a class="links" href="./eliminations/comes-at-night.html">It Comes at Night</a>
+                <ul>
+                    <li>Zenica, $2800</li>
+                </ul>
+            </li>
+            <li><a class="links" href="./eliminations/angry-spirits.html">Angry Spirits</a>
+                <ul>
+                    <li>Inoon, $4500</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 

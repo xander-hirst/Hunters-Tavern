@@ -6,14 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-a {font-weight: bold; color: rgb(255, 59, 59);}
-a:visited { color:rgb(255, 59, 59); }
-a:hover { color:rgb(255, 59, 59); }
-a:focus { color:rgb(255, 133, 133); }
-a:hover, a:active { color:rgb(255, 133, 133); }
+.back {
+    font-weight: bold; 
+    color: rgb(255, 59, 59);
+    background-color: black;
+    margin:25px; 
+    font-size: 2rem;
+}
+.back:visited { color:rgb(255, 59, 59); }
+.back:hover, .back:active, .back:focus { color:rgb(255, 133, 133); }
 
 .center {
-    height: 95vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +37,7 @@ body {
 <body>
 
 <div class="container">
-    <a href="./bounty-landing.html" style="margin:50px 25px;">Go Back</a>
+    <a class="back" href="./bounty-landing.html">Go Back</a>
     <div class="center">
         <h1>Retrieval</h1>
     </div>
