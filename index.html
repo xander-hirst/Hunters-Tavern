@@ -41,13 +41,56 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  margin: 0 0 0 0;
 }
+
+.splashscreen {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    -o-object-fit: fill;
+    object-fit: fill;
+    z-index: 999;
+    -webkit-animation: seconds 1.0s forwards;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 4s;
+    animation: seconds 1.0s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+}
+
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+    position: absolute;   
+  }
+}
+
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+    position: absolute;     
+  }
+}
+
 </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="center">
+    <img src="./images/hunters-tavern-gif.gif" class="splashscreen" alt="Hunters Tavern GIF"/>
+    
+    <div class="container">
+        <div class="center">
         <h1>Hunter's Tavern</h1>
 
         <div class="bounty">
@@ -58,7 +101,5 @@ body {
             <a href="./information-landing.html">Information</a>
         </div>
     </div>
-</div>
-
 </body>
 </html>
