@@ -6,6 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+ul {
+  list-style-type: none;
+  color: black;
+  font-weight: bold;
+}
+li {
+    background-color: rgb(243, 202, 147);
+    margin-bottom: 2rem;
+}
 .back {
     font-weight: bold; 
     color: rgb(255, 59, 59);
@@ -15,6 +24,13 @@
 }
 .back:visited { color:rgb(255, 59, 59); }
 .back:hover, .back:active, .back:focus { color:rgb(255, 133, 133); }
+
+
+.links, .links:visited {
+    color: black;
+    background-color: rgb(243, 202, 147);
+}
+.links:hover, .links:active, .links:focus { color:rgb(255, 59, 59); }
 
 .center {
     height: 90vh;
@@ -39,7 +55,19 @@ body {
 <div class="container">
     <a class="back" href="./bounty-landing.html">Go Back</a>
     <div class="center">
-        <h1>Retrieval</h1>
+        <ul>
+            <li><a class="links" href="./eliminations/armored-horror.html">The Armored Horror</a>
+                <ul>
+                    <li>Haskus, $4000</li>
+                </ul>
+            </li>
+            <li> </li>
+            <li><a class="links" href="./eliminations/spreads-decay.html">It Spreads Decay</a>
+                <ul>
+                    <li>Zenica, $2800</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 
